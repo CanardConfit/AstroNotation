@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AstroNotation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="AstroNotation" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Load" Click="LoadImageMenuItem_Click"/>
+                <MenuItem Header="_Save" Click="SaveImageMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Annotation">
+                <MenuItem Header="_Add Annotation" Click="AddAnnotationMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <Canvas Name="ImageCanvas" Background="LightGray"/>
+    </DockPanel>
 </Window>
