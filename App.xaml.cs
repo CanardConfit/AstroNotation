@@ -10,4 +10,3 @@ namespace AstroNotation;
 public partial class App : Application
 {
 }
-
